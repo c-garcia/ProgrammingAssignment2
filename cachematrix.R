@@ -22,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Gets the inverse the matrix stored in x
 ## The first time it is called, stores the
-## result. From than moment on, the 
+## result. From than moment on, further
+## invocations store the cached result
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
